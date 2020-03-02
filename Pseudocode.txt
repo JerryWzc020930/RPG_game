@@ -1,0 +1,31 @@
+Main Manu:
+	Start: start a new game
+	Exit: quit the game and close the program
+	Instructions: print a brief description of the game and some main commands
+Basic commands:
+	Help: print instructions
+	Quit: ask “ Are you quitting the game?”
+		If yes, go back to the main menu
+		If no, continue the game
+	Equipment: print the current weapon and medicine list
+	Status: print the current life_points, inventory and the # of the room you are in
+Start:
+	life_points = 100
+	If life_points <= 0:
+Print “Game over”, go back to the main menu.
+Else:
+Continue
+
+Print the description of the room, including the list of weapons, list of medicines, number of enemies and current life points.
+Options:
+	Pick: pick up all the new equipment available in the room
+	Equip: equip the input weapon / use the input medicine
+	Move (input direction): move in the selected direction (front, back, left, right)
+	If the input value is not in the inventory, print “not in inventory”.
+When encountering enemies:
+	Attack: attack enemies with the currently equipped weapon
+		Print “ you did # damage to the enemy”
+		Generate a random # of damage to the enemy
+	Cure (input medication): cure with the selected medicine
+	Flee: skip your turn of attack and escape
+After surviving one room, print current life points and inventory
